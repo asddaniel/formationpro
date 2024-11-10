@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logomtech.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programme de formation professionnel EDUKA</title>
+    <meta name="description" content="jusqu'au 31 décembre 2024 - Master EDUKA vous offre une offre promotionnelle de -25% sur nos formations
+    convertisseurs, aux panneaux solaires.">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="assets/out.css">
+    <style>
+      @keyframes neon-pulse {
+          0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ffff, 0 0 35px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 75px #00ffff; }
+          50% { text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #00ffff, 0 0 17px #00ffff, 0 0 20px #00ffff, 0 0 25px #00ffff, 0 0 37px #00ffff; }
+      }
+
+      .neon-text {
+          animation: neon-pulse 1.5s infinite alternate;
+      }
+
+      .bg-animated {
+          background: linear-gradient(-45deg, #000000, #1a1a1a, #000033, #003366);
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+      }
+
+      @keyframes gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+      }
+
+      .cyber-grid {
+          background-image: linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+          background-size: 20px 20px;
+          animation: cyber-grid-move 20s linear infinite;
+      }
+
+      @keyframes cyber-grid-move {
+          0% { background-position: 0 0; }
+          100% { background-position: 20px 20px; }
+      }
+
+      .feature-card {
+          backdrop-filter: blur(10px);
+          background-color: rgba(0, 0, 0, 0.5);
+          border: 1px solid rgba(0, 255, 255, 0.1);
+          transition: all 0.3s ease;
+      }
+
+      .feature-card:hover {
+          transform: translateY(-10px) scale(1.05);
+          box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      }
+
+      .feature-icon {
+          transition: all 0.3s ease;
+      }
+
+      .feature-card:hover .feature-icon {
+          transform: rotate(360deg) scale(1.2);
+      }
+
+      @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-20px); }
+      }
+
+      .floating {
+          animation: float 6s ease-in-out infinite;
+      }
+
+      .glitch-effect {
+          position: relative;
+          overflow: hidden;
+      }
+
+      .glitch-effect::before,
+      .glitch-effect::after {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+      }
+
+      .glitch-effect::before {
+          left: 2px;
+          text-shadow: -2px 0 #ff00de;
+          clip: rect(24px, 550px, 90px, 0);
+          animation: glitch-anim 3s infinite linear alternate-reverse;
+      }
+
+      .glitch-effect::after {
+          left: -2px;
+          text-shadow: -2px 0 #00ffff;
+          clip: rect(85px, 550px, 140px, 0);
+          animation: glitch-anim 2s infinite linear alternate-reverse;
+      }
+
+      @keyframes glitch-anim {
+          0% { clip: rect(39px, 9999px, 71px, 0); }
+          20% { clip: rect(3px, 9999px, 5px, 0); }
+          40% { clip: rect(6px, 9999px, 38px, 0); }
+          60% { clip: rect(13px, 9999px, 43px, 0); }
+          80% { clip: rect(44px, 9999px, 93px, 0); }
+          100% { clip: rect(54px, 9999px, 47px, 0); }
+      }
+  </style>
+  </head>
+  <body>
+    <div id="app"></div>
+   
+<section>
+  <!-- Container -->
+  <nav class="w-full flex justify-between relative h-16 items-center px-5 lg:px-32 bg-black">
+    <h3 class="uppercase  text-5xl font-extrabold text-sky-600">EDUKA</h3>
+    <ul class="hidden text-white   lg:flex items-center justify-center gap-7">
+    <li>
+    <a class="hover:underline focus:underline underline-offset-4 hover:text-sky-600 focus:text-sky-600 transition-all duration-300" href="#">Cours</a>
+    </li>
+    <li>
+    <a class="hover:underline focus:underline underline-offset-4 hover:text-sky-600 focus:text-sky-600 transition-all duration-300" href="#">Formation </a>
+    </li>
+    <li>
+    <a class="hover:underline focus:underline underline-offset-4 hover:text-sky-600 focus:text-sky-600 transition-all duration-300" href="#">Modalités</a>
+    </li>
+    <li>
+    <a class="hover:underline focus:underline underline-offset-4 hover:text-sky-600 focus:text-sky-600 transition-all duration-300" href="#">Prix</a>
+    </li>
+    <li>
+    <a class="hover:underline focus:underline underline-offset-4 hover:text-sky-600 focus:text-sky-600 transition-all duration-300" href="#">FAQ</a>
+    </li>
+    <a class="bg-sky-500 rounded-md text-white px-8 py-2 hover:bg-sky-700 transition focus:ring focus:ring-sky-600" href="#">Contact</a>
+    </ul>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon AlignJustify 24 block lg:hidden hover:opacity-80 transition text-gray-100" role="button">
+    <line x1="3" x2="21" y1="6" y2="6">
+    </line>
+    <line x1="3" x2="21" y1="12" y2="12">
+    </line>
+    <line x1="3" x2="21" y1="18" y2="18">
+    </line>
+    </svg>
+    </nav>
+    <section class="relative h-auto  w-full flex flex-col  items-center pt-10 lg:pt-32 bg-black">
+    <div class="absolute h-[20%] w-[20%] top-[20%] left-[50%] -translate-x-1/2 bg-sky-500 rounded-full blur-[110px]">
+    </div>
+    <h1 class="w-full text-3xl md:text-4xl lg:text-7xl max-w-2xl text-white font-bold  text-center">OFFRE   </h1>
+    <h1 class="w-full text-3xl md:text-4xl lg:text-7xl max-w-2xl text-white font-bold  text-center mt-3">De Formation <span class="text-sky-500 ">Eduka</span>
+    </h1>
+    <p class="text-center lg:text-xl text-sky-200 mt-10 max-w-xl">Obtenir des competences professionnels cruciale pour un emploi de qualité</p>
+    <a target="_blank" href="https://wa.me/243899687664?text=Bonjour%20%C3%A0%20votre%20demande%20d%27acc%C3%A8s%20au%20formation%20Eduka%20est%20en%20cours%20de%20validation%20et%20sera%20prochainement%20disponible%20sur%20le%20site%20https%3A%2F%2Fwww.eduka.fr%2F%231" class="py-3 px-5 rounded-md bg-sky-500 text-black mt-16 hover:bg-sky-600 transition">Nous Contacter</a>
+    <div class="flex items-center justify-center gap-5 uppercase text-white text-sm lg:text-xl font-semibold mt-10">
+    <div class="w-6 lg:w-12 h-0.5 lg:h-1.5 rounded-full bg-sky-500">
+    </div>différent types de formations<div class="w-6 lg:w-12 h-0.5 lg:h-1.5 rounded-full bg-sky-500">
+    </div>
+    </div>
+    <div class=" flex flex-wrap gap-5 md:flex md:flex-row items-center justify-center  lg:gap-14 lg:h-24 h-auto w-[80%] lg:mx-auto  lg:bg-zinc-900 my-2 lg:my-10 rounded-3xl">
+    <div class="w-auto h-auto flex items-center justify-center gap-4 text-white text-sm md:text-xl lg:text-2xl font-bold">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon Layers 24">
+    <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z">
+    </path>
+    <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65">
+    </path>
+    <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65">
+    </path>
+    </svg> Etudiants</div>
+    <div class="w-auto h-auto flex items-center justify-center gap-4 text-white text-sm md:text-xl lg:text-2xl font-bold">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon Ship 24">
+    <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1">
+    </path>
+    <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76">
+    </path>
+    <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6">
+    </path>
+    <path d="M12 10v4">
+    </path>
+    <path d="M12 2v3">
+    </path>
+    </svg> Autodidacte</div>
+    <div class="w-auto h-auto flex items-center justify-center gap-4 text-white text-sm md:text-xl lg:text-2xl font-bold">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon Ratio 24">
+    <rect width="12" height="20" x="6" y="2" rx="2">
+    </rect>
+    <rect width="20" height="12" x="2" y="6" rx="2">
+    </rect>
+    </svg> Individuel</div>
+    <div class="w-auto h-auto flex items-center justify-center gap-4 text-white text-sm md:text-xl lg:text-2xl font-bold">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon Ratio 24">
+    <rect width="8" height="8" x="2" y="2" rx="2">
+    </rect>
+    <path d="M14 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2">
+    </path>
+    <path d="M20 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2">
+    </path>
+    <path d="M10 18H5c-1.7 0-3-1.3-3-3v-1">
+    </path>
+    <polyline points="7 21 10 18 7 15">
+    </polyline>
+    <rect width="8" height="8" x="14" y="14" rx="2">
+    </rect>
+    </svg> Entreprise</div>
+    <div class="w-auto h-auto flex items-center justify-center gap-4 text-white text-sm md:text-xl lg:text-2xl font-bold">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon ChefHat 24">
+    <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z">
+    </path>
+    <line x1="6" x2="18" y1="17" y2="17">
+    </line>
+    </svg> Eleves</div>
+    </div>
+    </section>
+</section>
+<div class="bg-black text-white min-h-screen">
+  <section class="bg-animated cyber-grid py-20 relative overflow-hidden">
+      <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-12 neon-text glitch-effect" data-text="EDUKA pour professionnels">NOS FORMATIONS</h2>
+          <div class="py-8 italic text-xl text-center mb-8">
+            Ce programme accompagne les professionnels dans leurs préparations professionnels, de la définition des objectifs jusqu’à la réalisation complète. 
+            Il s’adresse aux participants souhaitant renforcer leurs compétences necessaire pour la profession, le développement de solutions informatiques, et la conception d’applications ou d’infrastructures techniques (réseaux, logiciels, etc.).
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="feature-card rounded-lg p-6 floating">
+                  <div class="text-5xl mb-4 text-cyan-400 feature-icon">
+                      <i class="fas fa-brain"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Developpement Web</h3>
+                  <p class="text-gray-300">Maîtriser les technologies de Developpement web (HTML, CSS, JavaScript, Tailwindcss, React, Angular, Vue, etc.)</p>
+              </div>
+              <div class="feature-card rounded-lg p-6 floating" style="animation-delay: 1s;">
+                  <div class="text-5xl mb-4 text-pink-500 feature-icon">
+                      <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Développement Mobile</h3>
+                  <p class="text-gray-300">Maîtriser les technologies de Developpement mobile (Android, IOS, React Native, etc.)</p>
+                  
+              </div>
+              <div class="feature-card rounded-lg p-6 floating" style="animation-delay: 2s;">
+                  <div class="text-5xl mb-4 text-purple-500 feature-icon">
+                      <i class="fas fa-vr-cardboard"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Developpement Desktop</h3>
+                  <p class="text-gray-300">Maîtriser les technologies de Developpement desktop (Windows, MacOS, Linux, etc.)</p>
+                  
+              </div>
+              <div class="feature-card rounded-lg p-6 floating" style="animation-delay: 0.5s;">
+                  <div class="text-5xl mb-4 text-green-400 feature-icon">
+                      <i class="fas fa-network-wired"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Cyber Sécurité </h3>
+                  <p class="text-gray-300">Apprendre les méthodes de protection et sécurisation des
+                    systèmes informatiques.</p>
+              </div>
+              <div class="feature-card rounded-lg p-6 floating" style="animation-delay: 1.5s;">
+                  <div class="text-5xl mb-4 text-yellow-400 feature-icon">
+                      <i class="fas fa-bolt"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Big Data et Data Science</h3>
+                  <p class="text-gray-300">Analyse de données massives et apprentissage
+                    automatique.</p>
+              </div>
+              <div class="feature-card rounded-lg p-6 floating" style="animation-delay: 1.5s;">
+                <div class="text-5xl mb-4 text-yellow-400 feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Intelligence Artificielle et Machine Learning</h3>
+                <p class="text-gray-300">Principes et
+                  applications des modèles d’IA dans différents secteurs.</p>
+            </div>
+              <div class="feature-card rounded-lg p-6 floating" style="animation-delay: 2.5s;">
+                  <div class="text-5xl mb-4 text-red-500 feature-icon">
+                      <i class="fas fa-dna"></i>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-2">Administration Réseau</h3>
+                  <p class="text-gray-300">Gestion, configuration et sécurisation des réseaux
+                    informatiques.</p>
+              </div>
+              <div class="feature-card rounded-lg p-6 floating" style="animation-delay: 2.5s;">
+                <div class="text-5xl mb-4 text-red-500 feature-icon">
+                    <i class="fas fa-dna"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Analyse et Conception de Base de Données</h3>
+                <p class="text-gray-300">Structuration et gestion
+                  de bases de données</p>
+            </div>
+          </div>
+      </div>
+  </section>
+</div>
+<div class="h-screen w-full oveflow-hidden  mb-16 bg-slate-800 pt-4  text-white">
+  
+  <main class="flex  justify-center px-4 md:px-8 lg:px-16 overflow-hidden ">
+  <section class="flex flex-col space-y-10 max-w-lg items-center md:items-start">
+ 
+  <h1 class="text-teal-500 font-bold text-2xl md:text-4xl lg:text-5xl text-center"> Programme de mise à niveau professionnel</h1>
+  <p class="text-base md:text-base lg:text-xl text-center"> Cette offre est conçue pour t’aider à maîtriser les matières plus avancées de ta
+    préparation professionnel. Nous t’accompagnerons pour que tu comprennes et maîtrises parfaitement les
+    notions importantes qui te serviront dans tes futures études et ta carrière.</p>
+  <div class="w-48 h-10">
+  <a href="https://wa.me/243899687664?text=Bonjour%20%C3%A0%20votre%20demande%20d%27acc%C3%A8s%20au%20formation%20Eduka%20est%20en%20cours%20de%20validation%20et%20sera%20prochainement%20disponible%20sur%20le%20site%20https%3A%2F%2Fwww.eduka.fr%2F%231" class="py-3 px-5 rounded-md bg-sky-500 text-black mt-16 hover:bg-sky-600 transition shadow-blue-300 rounded-full text-center text-blue-600
+                            text-white font-bold text-base  hover:opacity-90 hover:scale-95 transition duration-300 
+                            flex items-center justify-center gap-4"
+                            >
+                            
+                           
+                <span>
+                        
+                </span>
+  En profiter</a>
+  </div>
+  </section>
+  <section class="flex-1 relative mt-36 ">
+  <div class="absolute hidden md:flex top-32 left-0 h-[550px] w-[500px] bg-blue-500 rounded-3xl -rotate-[30deg] origin-top-left">
+  <img src="etudiants.avif" alt="team picture" class="h-full w-full object-contain rotate-[30deg] pb-32"/>
+  </div>
+  </section>
+  </main>
+  
+
+
+
+
+<section>
+  <!-- Container -->
+  <div class="mx-auto bg-white text-gray-800 w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+    <!-- Title -->
+    <p class="text-center text-sm font-bold uppercase">Enseignement</p>
+    <h2 class="text-center text-3xl font-bold md:text-5xl"> Organisation de l'enseignement </h2>
+    <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-16"> Pour un suivit qui t'assure une progression constante</p>
+    <!-- Content -->
+    <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-6">
+      <!-- Item -->
+      <div class="grid gap-4 transition-all duration-500 hover:scale-105 hover:shadow-3xl shadow-xl cursor-pointer rounded-md border border-solid border-gray-300 p-8 md:p-10">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+          <p class="text-sm font-bold sm:text-xl">1</p>
+        </div>
+        <p class="text-xl font-semibold">3 séances par semaine </p>
+        <p class="text-sm text-gray-500"> Chaque séance dure entre 1h30 et 2h.</p>
+      </div>
+      <!-- Item -->
+      <div class="grid gap-4 transition-all duration-500 hover:scale-105 hover:shadow-3xl shadow-xl cursor-pointer rounded-md border border-solid border-gray-300 p-8 md:p-10">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+          <p class="text-sm font-bold sm:text-xl">2</p>
+        </div>
+        <p class="text-xl font-semibold">Disponibilité en ligne 24/7 </p>
+        <p class="text-sm text-gray-500"> Via WhatsApp et Google Meet pour des échanges
+          rapides ou partages d’écran.</p>
+      </div>
+      <!-- Item -->
+      <div class="grid gap-4 transition-all duration-500 hover:scale-105 hover:shadow-3xl shadow-xl cursor-pointer rounded-md border border-solid border-gray-300 p-8 md:p-10">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+          <p class="text-sm font-bold sm:text-xl">3</p>
+        </div>
+        <p class="text-xl font-semibold">Durée de l’accompagnement </p>
+        <p class="text-sm text-gray-500"> dépendante de la formation</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ezy__pricing6 w-screen light pt-14 md:pt-20 bg-white  text-zinc-900">
+  <div class="container px-4">
+    <div class="grid grid-cols-12 text-center md:text-start my-12">
+      <div class="col-span-12 md:col-span-6 lg:col-span-5">
+        <h2 class="text-3xl leading-none md:text-[45px] font-bold mb-4">
+          Durée et Modalité de souscription
+        </h2>
+      </div>
+      
+    </div>
+  </div>
+  <div class="bg-[#0b1727] flex justify-center w-screen  text-white pb-14 md:pb-24">
+    <div class="container   w-screen">
+      <div class="grid grid-cols-12 gap-6 items-center text-center">
+        <div class="col-span-12 lg:col-span-4">
+          <div
+            class="bg-white bg-opacity-20 dark:bg-black dark:bg-opacity-20 rounded-2xl lg:rounded-b-2xl lg:rounded-t-none shadow p-4 lg:p-12 h-full"
+          >
+            <h3 class="font-bold mb-2 text-3xl">Basic</h3>
+            <p class="opacity-75 mb-6">
+              minimal pour 1 formation
+            </p>
+            <div class="mb-4">
+              <span class="text-4xl font-bold">$79, 99 </span>
+              <span class="ml-2 opacity-50">/formation</span>
+            </div>
+
+            <button
+              class="bg-white bg-opacity-20 text-white hover:bg-blue-600 py-3 px-7 rounded-md duration-300 w-full mt-6"
+            >
+              Chosir le plan
+            </button>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-4">
+          <div
+            class="bg-white text-gray-900   rounded-2xl lg:rounded-b-2xl lg:rounded-t-none shadow p-4 lg:p-12 h-full"
+          >
+            <h3 class="font-bold mb-2 text-3xl">Standard</h3>
+            <p class="opacity-75 mb-6">
+              2 formations
+            </p>
+            <div class="mb-4">
+              <span class="text-4xl font-bold">$74, 99 </span>
+              <span class="ml-2 opacity-75">/formation</span>
+            </div>
+
+            <button
+              class="bg-blue-600 text-white border border-blue-600 hover:bg-opacity-90 py-3 px-7 rounded-md duration-300 w-full mt-6"
+            >
+              Choisir le plan
+            </button>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-4">
+          <div
+            class="bg-white bg-opacity-20 dark:bg-black dark:bg-opacity-20 rounded-2xl lg:rounded-b-2xl lg:rounded-t-none shadow p-4 lg:p-12 h-full"
+          >
+            <h3 class="font-bold mb-2 text-3xl">Complete</h3>
+            <p class="opacity-75 mb-6">
+              3 formations
+            </p>
+            <div class="mb-4">
+              <span class="text-4xl font-bold">$69, 99 </span>
+              <span class="ml-2 opacity-50">/formation</span>
+            </div>
+
+            <button
+              class="bg-white bg-opacity-20 text-white hover:bg-blue-600 py-3 px-7 rounded-md duration-300 w-full mt-6"
+            >
+              Choisir le plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Sélectionner tous les éléments FAQ
+    const faqs = document.querySelectorAll(".faq");
+  
+    faqs.forEach((faq) => {
+      const answer = faq.querySelector("p"); // Sélectionner le paragraphe réponse
+      const toggleIcon = faq.querySelector("a svg"); // Sélectionner l'icône
+      
+      // Masquer la réponse au chargement de la page
+      if (answer) answer.style.display = "none";
+  
+      // Ajouter un écouteur d'événement sur le bouton de l'accordéon
+      faq.querySelector("a").addEventListener("click", (e) => {
+        e.preventDefault(); // Empêcher le comportement par défaut de l'ancre
+  
+        // Basculer l'affichage de la réponse
+        if (answer) {
+          const isVisible = answer.style.display === "block";
+          answer.style.display = isVisible ? "none" : "block";
+  
+          // Basculer l'icône (+/-)
+          toggleIcon.innerHTML = !isVisible
+            ? `<circle cx="12" cy="12" r="12" fill="white"></circle>
+               <path d="M7.04688 11.9999H16.9469" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>`
+            : `<circle cx="12" cy="12" r="12" fill="white"></circle>
+               <path d="M7.05078 12H16.9508" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+               <path d="M12 7.05005V16.95" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>`;
+        }
+      });
+    });
+  });
+  
+</script>
+  </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
